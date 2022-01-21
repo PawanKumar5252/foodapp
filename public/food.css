@@ -1,0 +1,353 @@
+/* body{
+  height: 100%;
+  width: 100%;
+  scroll-snap-type: none;
+  scrollbar-width: 0px;
+} */
+
+/* ============searvh bar========================================================= */
+.search_div{
+  margin-top: 2px;
+     /* background-color: brown; */
+     align-items: center;
+     font-size: 3vmin;
+     text-align: center;
+     text-align: top;
+     box-sizing: border-box;
+     box-shadow: rgb(199, 17, 17);
+     
+}
+.search{
+  /* margin-top: 0%; */
+  margin-left: 15%;
+  height: 3vmin;
+  width: 50vmin;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.search_btn{
+  /* background-color: tomato; */
+  height: 3.5vmin;
+  width: 8vmin;
+  border-radius: 8px;
+  font-size: 2vmin;
+}
+/* ------------------title----------------- */
+
+.tital_bar{
+  background-color: rgb(209, 197, 192);
+  height: 50px;
+  width: 100%;
+  box-shadow: rgb(46, 28, 28);
+  text-align: right;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+ 
+}
+
+.pro_img{
+  margin: 5px;
+  float: right;
+  width: 45px;
+  background-color: blue;
+  border-radius: 40%;
+}
+#Profile_icon{
+  width: 100%;
+  height: 33px;
+  border-radius: 40%;
+}
+
+
+
+.ina_div{
+  margin: 10px;
+  float: left;
+  width: 50px;
+  /* border-radius: 40%; */
+}
+
+#three_line{
+  margin-left: -7px;
+  width: 46px;
+  height: 26px;
+  border-bottom-left-radius: 15px;
+}
+.btn{
+  background-color: blue;
+  margin-right: 100%;
+  /* padding-left: 10px; */
+  /* background-color: rgb(209, 197, 192); */
+  font-size: 15px;
+  height: 30px;
+  width: 45px;
+  border-radius: 3px;
+  border-bottom-left-radius: 20px;
+  /* border-top-right-radius: 10px; */
+}
+
+
+
+
+li{
+  padding-right: 10px;
+  padding-top: 11px;
+  list-style-type: none;
+  display: inline-block;
+  font-style:none;
+  border-radius: 3px;
+}
+.top_log{
+  /* margin-top: ; */
+  background-color: rgb(209, 197, 192);
+  font-size: 15px;
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+.top_reg{
+  background-color: rgb(209, 197, 192);
+  font-size: 15px;
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* -----------payment page---------------------- */
+
+.payment{
+  font-size: 130%;
+  text-align: center;
+  background-color: rgb(120, 138, 172);
+  box-shadow: rgb(216, 200, 200);
+}
+
+.Suggested{
+  margin-left:10%;
+  margin-top:5%;
+}
+.Allotheroptions{
+  margin-left:10%;
+  height: 60;
+  width: 70%;
+  padding-inline-end: 4px;
+  background-color: rgb(233, 237, 245);
+  box-shadow: rgb(114, 77, 77);
+}
+/* .classbox{
+  background-color: rgb(218, 102, 25);
+} */
+ 
+#txtimg1{
+  height: 10%; 
+  width:10%;
+  margin-left:100%;
+  padding-left:90%; 
+}
+#txtimg2{
+  height:10%; 
+  width:10%;
+  margin-left:100%;
+  padding-left:90%;  
+}
+#txtimg3{
+  height:15%; 
+  width:15%;
+  margin-left:100%;
+  padding-left:90%;  
+}
+   /*------------------------------------------ food.html--------------------------------------- */
+   /*------------------------------------------ food.html--------------------------------------- */
+   /*------------------------------------------ food.html--------------------------------------- */
+#description {
+  /* margin-top: 10px; */
+  font-size: 20px;
+  height: 900px;
+   /* height: 100%; */
+  width:300px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(209, 167, 150);
+  float: left;
+}
+
+.Cart{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+}
+
+#orderform{
+  /* height: 100%; */
+  /* height: 900px; */
+  width: 100%;
+  /* width: 1600px; */
+  /* margin-left: 325px; */
+  margin-top:10px;
+  background-color:rgb(221, 178, 9);
+  float: left;
+  align-items: center;
+}
+
+/* .main_container_div{
+  background-color:rgb(233, 202, 202);
+  float: left;
+  align-items: center;
+  padding-left:10px;
+} */
+
+.gallary{
+  margin: 8px;
+  /* border:  solid snow; */
+  float: left;
+  /* width: 367px; */
+  width: 45vmin;
+  /* width: 45vmax; */
+  /* align-items: center; */
+}
+.gallary img{
+  width: 100%;
+  /* height: 300px; */
+  height: 40vmin;
+  /* height:40vmax ; */
+}
+.lab_name{
+  /* background-color:red; */
+  font-size: 23px;
+  font-style: oblique;
+  text-align: center;
+  text-shadow: aquamarine;
+  text-overflow: center;
+}
+.btn2{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+}
+.ordersummary{
+  font-size:30px;
+  height: 400px;
+  width:1000px;
+  margin-left: 210px;
+  margin-top:5px;
+  background-color:rgb(152, 222, 135);
+  box-shadow: rgb(218, 159, 159);
+}
+/* ---------------------------sailer----------------------------------------- */
+/* ---------------------------sailer----------------------------------------- */
+/* ---------------------------sailer----------------------------------------- */
+/* ---------------------------sailer----------------------------------------- */
+#sail_body{
+ background-color: rgba(43, 48, 31, 0.562);
+}
+
+.sailer{
+  padding: 20px;
+  padding-left: 20px;
+  margin-left: 300px;
+  margin-top: 100px;
+  align-content: center;
+  height: 800px;
+  width: 600px;
+  background-color: aquamarine;
+  
+}
+.up_gallary{
+  margin: 5px;
+  /* border:coral; */
+  float: left;
+  width: 300px;
+}
+.up_gallary img{
+  width: 100%;
+  height: 250px;
+}
+
+#pid{
+  font-style: oblique;
+  font-size-adjust: inherit;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: -10px;
+}
+
+.upsubmit{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  box-shadow: blueviolet;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.up_submit{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  box-shadow: blueviolet;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+/* -------------------------------------------------------sailor_uplode-------------------------------------------- */
+/* -------------------------------------------------------sailor_uplode-------------------------------------------- */
+/* -------------------------------------------------------sailor_uplode-------------------------------------------- */
+/* -------------------------------------------------------sailor_uplode-------------------------------------------- */
+.sailor_up_gallary{
+  /* margin-left: 40%; */
+  background-color:rgb(238, 233, 227);
+  float: left;
+  width: 367px;
+
+}
+.sailor_up_gallary img{
+  width: 100%;
+  height: 300px;
+}
+
+/* ------------------------------------------payment_page----------------------------------------- */
+.order_gallary{
+  align-items: center;
+  margin: 5px;
+  background-color:rgb(238, 233, 227);
+  float: left;
+  width: 167px;   
+}
+.order_gallary_img {
+  width: 100%;
+  height: 100px;
+}
+.cont_h1{
+  text-align: center;
+  /* padding-left: 30%; */
+  background-color: rgba(212, 114, 114, 0.473);
+}
+.order_contener{
+  background-color: rgba(222, 223, 171, 0.904);
+  margin-left:20%;
+  margin-top:20%;
+  width: 50%;
+  box-shadow:5%;
+}
+.order_table{
+  padding-left: 3%;
+  width: 100%;
+}
+.order_table_tr{
+  padding-left: 5%;
+  width: 100%;
+}
+.cont_btn{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  box-shadow: blueviolet;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

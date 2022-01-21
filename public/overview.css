@@ -1,0 +1,68 @@
+
+body{
+  background-color: rgb(187, 216, 159);
+  height: 100%;
+  /* width: 100%; */
+  scroll-snap-type: none;
+  scrollbar-width: 0px;
+}
+
+/* ============searvh bar========================================================= */
+.search_div{
+  margin-top: 2px;
+     /* background-color: brown; */
+     align-items: center;
+     font-size: 3vmin;
+     text-align: center;
+     text-align: top;
+     box-sizing: border-box;
+     box-shadow: rgb(199, 17, 17);
+     
+}
+.search{
+  /* margin-top: 0%; */
+  margin-left: 15%;
+  height: 3vmin;
+  width: 50vmin;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.search_btn{
+  /* background-color: tomato; */
+  height: 3.5vmin;
+  width: 8vmin;
+  border-radius: 8px;
+  font-size: 2vmin;
+}
+
+/* ----------------------------------------------contant_page------------------------------------------------------------------- */
+/* ----------------------------------------------contant_page------------------------------------------------------------------- */
+/* ----------------------------------------------contant_page------------------------------------------------------------------- */
+.order_container{
+  /* background-color: chartreuse; */
+  margin-top: 10px;
+}
+.cont_btn{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  box-shadow: blueviolet;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cont_gallary{
+  margin-top: 5%;
+  margin: 5px;
+  background-color:rgb(238, 233, 227);
+  float: left;
+  width: 367px;   
+}
+.cont_gallary img{
+  width: 100%;
+  height: 300px;
+}
+.lab_name2{
+  padding-left:4%;
+  padding-top: -2%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <script rel="text/javascript" href="/static/test.js"></script> -->
+    <link rel="stylesheet" href="/public/food.css">
+</head>
+
+<body>
+    <form action="/uplodeprofile" method="post" enctype="multipart/form-data">
+      <div class="sailor_up_gallary">
+          <img src= "" id="sail_img"> 
+          <input type="file" name="image_file" id="image_file">
+      
+        <p class="up_text">Ente The Name of Your Product</p><input type="text" name="your_dp" id="your_dp" ></input>
+        <p class="up_text">Ente The Price of Your Product</p><input type="text" name="your_price" id="your_dp"></input>
+        <p class="up_text">Ente The Discount Percentage of Your Product</p><input type="text" name="your_desc" id="your_dp" ></input>
+        <br>
+        <input type="submit" id="img_input" class="img_input">Uplode Image</input>
+        <!-- <button type="button" id="img_input" class="img_input">Edit Image</button>
+        <button type="button" id="img_input" class="img_input">Delete Image</button> -->
+      </div>  
+    </form>
+      <% objs.forEach(function(item){ %>
+        <%if(item.Email== tit1 ){%>
+        <div class="cont_gallary">
+          <img src="<%=item.product.imagename %>">
+          <p class="lab_name"><b><%=item.product.p_name%></b></p>
+          <p class="lab_name"><b><%=item.product.P_prise%></b></p>
+        </div>
+        <%}%>
+      <%})%>
+</body>    
+</html>

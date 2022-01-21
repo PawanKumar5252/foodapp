@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/public/food.css">
+  <!-- <script type="type/javascript" src="/app2.js"></script>
+  <script rel="text/javascript" href="/static/test.js"></script>
+  <script type="text/javascript" src="/app2.js"></script> -->
+  <script type="text/javascript">
+
+    function show() {
+      // document.getElementById("description").style.display="none";
+      if (style = "display:none") {
+        document.getElementById("description").style.display = "block";
+        //document.getElementById("description").style.display="block";
+        //hide.style.display="block";
+      }
+      // if(style="display:none"){
+      //     document.getElementById("description").style.display="block";
+      //   // hide.style.display="none";
+      // }
+    }
+
+
+
+  </script>
+</head>
+
+<body>
+
+  <div class="tital_bar">
+    <div class="ina_div"> <button type="button" name="btn" class="btn" id="btn" onclick="show()">
+        <img src="/public/icon/icon.jpg" id="three_line" width="100" hight="100"></button></div>
+    <div class="pro_img"> <img src=" " id="Profile_icon" name="Profile_icon"></div>
+    <ul>
+
+      <!-- <li> <input type="button" name="btn" class="btn" value="btn" id="btn" onclick="show()"></input></li> -->
+      <li><a href="/login_page"><input class="top_log" type="button" value="Login"></input> </a></li>
+      <li><a href="/register_page"><input class="top_reg" type="button" value="SignUp"></input></a></li>
+      <li>
+        <form action="/logout" method="post">
+          <input class="top_reg" type="submit" value="LogOut"></input>
+      </li>
+      </form>
+      </li>
+      <%if(user!=null){%>
+        <li>
+          <%=user.name%>
+        </li>
+        <%}%>
+
+    </ul>
+  </div>
+
+  <!-- <input type="checkbox" name="meal1" id="p1" value="pawan">    style="display:none"-->
+
+  <form action="/search_bar" method="post">
+    <div class="search_div">
+      <input type="text" class="search" name="search">
+      <input type="submit" class="search_btn" value="search"></input></input>
+    </div>
+  </form>
+  <form action="/" method="post" name="nam">
+
+    <div class="orderform" id="orderform">
+      <div class="description" id="description" style="display:none">
+        <ul>
+          <a href="/imageuplode">
+            <li cass="disc">About</li>
+          </a><br>
+          <a href="">
+            <li cass="disc">Servicess</li><br>
+            <a href="/sailor">
+              <li cass="disc">Sailer Acount</li><br>
+              <a href="/sailor_login">
+                <li cass="disc">Sailer Login</li><br>
+                <a href="">
+                  <li cass="disc">Profile</li><br>
+                  <a href="/sailor_profile">
+                    <li cass="disc">Sailor Profile</li><br>
+                    <a href="">
+                      <li cass="disc">Your Order</li><br>
+                      <a href="">
+                        <li cass="disc">Cansel</li><br>
+        </ul>
+        <input class="Cart" type="button" value="Cart">
+      </div>
+      <div class="main_container_div">
+        <% if(result!=null){%>
+          <% result.forEach(function(item){ %>
+            <div class="gallary">
+              <a href="/contant_page/<%=item.Email %>"><img src="<%=item.imagename %>"></a>
+              <p class="lab_name"><b>
+                  <%=item.sop_name%>
+                </b></p>
+            </div>
+            <% })%>
+              <%}else{%>
+                <% if(items!=null){%>
+                  <% items.forEach(function(item){ %>
+                    <div class="gallary">
+                      <a href="/contant_page/<%=item.Email %>"><img src="<%=item.imagename %>"></a>
+                      <p class="lab_name"><b>
+                          <%=item.sop_name%>
+                        </b></p>
+                    </div>
+                    <% })%>
+                      <%}else{%>
+                        <div class="gallary">
+                          <img
+                            src="https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            width="100" hight="100">
+                        </div>
+                        <%}%>
+                          <%}%>
+      </div>
+    </div>
+  </form>
+
+  <!-- <div class="ordersummary">
+
+      <table cellspacing="4" cellpadding="4" align="center" id="ordersummary" style="display:none">
+        <th>
+          <h2 padding-left="50">Order Summary</h2>
+        </th>
+        <tr>
+          <td>Name :-
+          <td id="username"></td>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>Mobile number :-
+          <td id="usermobile"></td>
+          </td>
+        </tr>
+        <tr>
+          <td>product name:-
+          <td id="userproduct"></td>
+          </td>
+        </tr>
+        <tr>
+          <td>Totle price:-
+          <td name="userprice"></td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/static/payment.html"><input type="button" value="payment" onclick=""></a>
+            <input type="button" value="print bill" onclick="window.print()"></input>
+          </td>
+        </tr>
+      </table>
+    </div> -->
+
+
+
+</body>
+
+<!-- <script type="text/javascript" src="/app2.js"></script> -->
+
+</html>
+<!-- <script type="text/javascript" src="/static/test.js"></script> -->

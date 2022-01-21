@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <script rel="text/javascript" href="/static/test.js"></script> -->
+    <link rel="stylesheet" href="/public/food.css">
+</head>
+
+<body>
+  <form action="conform_order" method="post">
+  <h1 class="cont_h1">Summary of Your Order</h1>
+  <% for(var j=0;j<=n1.length;j++){%>
+    <% objs.forEach(function(item){ %>
+    <% if(item._id == n1[j]){%>
+      <div class="order_gallary">
+     <img class="order_gallary_img " src="data:item/<%=item.img.contentType%>;base64,
+        <%=item.img.data.toString('base64')%>">
+       </div>
+       <%}%>
+      <%})%>
+      <%}%>  
+  <div class="order_contener">
+    <table class="order_table">
+      <tr>
+      <td><h4>product name</h4></td>   <td><h4>Extra</h4></td>   <td><h4>Rate</h4></td>   <td><h4>Quantity</h4></td>
+      <td><h4>Price</h4></td>
+      </tr>
+      <tr class="order_table_tr">
+        <% for(var j=0;j<=n1.length;j++){%>
+          <% objs.forEach(function(item){ %>
+          <% if(item._id == n1[j]){%>
+        <td>
+          <p><%= item.product.p_name%></p>
+        </td>
+        <td>
+          <p><%= Extra[j]%></p>
+        </td>
+        <td>
+          <p><%= item.product.P_prise%></p>
+        </td>
+        <td>
+          <p><%= b1[j]%></p>
+        </td>
+        <td>
+          <p><%= sum[j]%></p>
+        </td>  
+      </tr>
+      <%}%>
+      <%})%>
+      <%}%>
+      <tr>
+        <td><p><b>GST:-</b><%=gst%></p></td>
+     </tr>
+     <tr><td><p><b>Amount:-</b><%=amount%></p></td></tr>
+     
+     <tr><td><input class="cont_btn" type="submit" value="order"></td></tr>
+    </form>
+    </table>
+  </div> 
+
+</body>    
+</html>

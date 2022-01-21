@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/public/overview.css">
+</head>
+
+<body>
+  <form action="/search_bar" method="post">
+    <div class="search_div">
+      <input type="text" class="search" name="search">
+      <input type="submit" class="search_btn" value="search"></input></input>
+    </div>
+  </form>
+  <form action="/order_sum" method="post">
+    <div class="order_container">
+      <div>
+        <input class="cont_btn" id="upsubmit" type="submit" value="Continue"></input>
+      <div>
+    <% objs.forEach(function(item){ %>
+      <% if(item.Email== tit2){%>
+        <div class="cont_gallary">
+         <a href="/overview_page"> <img class="cont_gallary_img" src="data:item/<%=item.img.contentType%>;base64,
+                     <%=item.img.data.toString('base64')%>"></a>
+          <p class="lab_name" name="pro_name1"><b><%=item.product.p_name%>(&#8377; <%=item.product.P_prise%>/-)
+          <input type="checkbox" name="meal2" value="<%=item._id%>"></b></p>
+          <p class="lab_name2"><b>
+          <label>Choose Plate :</label>
+          <select name="quantity2" id="quantity2">
+            <option value="1">1</option>
+            <option value="0.5">1/2</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+          </select>
+          <br>
+          <label>Extra element :</label>
+          <select name="quantity3" id="quantity3">
+            <option value=" ">No</option>
+            <option value="gravy">gravy</option>
+            <option value="swach">swach</option>
+            <option value="mineral">Mineral water</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </b></p>
+        </div>
+        <% }%>
+      <% })%>
+    </div>
+  </form>
+</body>    
+</html>

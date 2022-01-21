@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/public/food.css">
+    <script rel="text/javascript" href="/static/test.js"></script>
+</head>
+
+<body>
+
+    <div class="sailer" id="sailer">
+ <!-- <a href="/reg_with_upload"> <input type="submit" class="up_submit" id="up_submit" value="Bulte Profile" name="submit"></input></a> -->
+    <form action="/reg_sailor" method="post" enctype="multipart/form-data">
+
+        <!-- <form action="/upload" method="post" enctype="multipart/form-data"> -->
+            <div class="up_gallary">
+
+            <img src="<%= users.name%>" class=''>
+            <input type="text" name="shop_name" id="shop_name" placeholder="Enter Your Shop Name"></input>
+            <input type="file" name="imagefile" id="img_file"></input>
+            <!-- <input type="submit" class="up_submit" id="up_submit" value="uplode" name="submit"></input> -->
+           </div>
+        <!-- </form> -->
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <p id="pid" name="pid"> Name :-</p> <input type="text" id="txt_id_f_name" name="txt_id_name"
+                        ></input>
+                    </td>
+                    <td colspan="2">
+                        <p id="pid">Email :-</p> <input type="text" name="txt_id_email"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <p id="pid">Phone Number:</p><input type="number" name="txt_id_pnum" ></input>
+                    </td>
+                    <td colspan="2">
+                        <p id="pid"> Countrt : </p><input type="text" name="txt_id_country" ></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <p id="pid">State : </p><input type="text" name="txt_state" ></input>
+                    </td>
+                    <td colspan="2">
+                        <p id="pid">Address: </p><input type="text" name="txt_addr" ></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p id="pid">Pin Code:- </p><input type="number" name="txt_P_code" ></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p id="pid"> Acount Number:</p><input type="text" name="txt_a_num" ></input>
+                    </td>
+                    <td colspan="2">
+                        <p id="pid"> Acount Holder Name:</p><input type="text" name="txt_a_name" ></input>
+                    </td>
+                </tr>
+                </tr>
+                  <td>
+                    <p id="pid">Password :</p><div id="box"></div><input type="password" class="box" id="box" name="pass" required></td></div>
+                  </td> 
+                  <td>
+                    <p id="pid">Conform Password :</p><div id="box"></div><input type="password" class="box" id="box" name="conpass" required></td></div>
+                  </td>  
+                </tr>
+                <tr>
+                    <!-- <td><input class="upsubmit" id="upsubmit" type="submit" value="submit"></input></td> -->
+                </tr>
+            </table>
+            <input class="upsubmit" id="upsubmit" type="submit" value="submit"></input>
+        </form>
+    </div>
+</body>
+
+</html>
